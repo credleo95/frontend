@@ -28,7 +28,7 @@ margin-right: 300px;
 
 const ArticleCard = ({ article, setGlobalArticles }) => {
   const { title, category, link, description, rank } = article;
-  const { article_id } = article; // This defines the id
+  const { article_id } = article;
   const ranking = [
     <RiEmotionNormalLine />,
     <RiEmotionLine />,
@@ -87,9 +87,9 @@ const ArticleCard = ({ article, setGlobalArticles }) => {
           Rank: {ranking[rank - 1]} {rankStatus[rank - 1]}{' '}
         </p>
         <p>Category: {category}</p>
-        <a className="READMORE" href={link}>
+        <p className="READMORE" onClick={(window.location.href = { link })}>
           Read More
-        </a>
+        </p>
         <p>Summary: {description}</p>
         <div>
           <Button className="primarybtn" primary onClick={handleModal}>

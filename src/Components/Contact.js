@@ -9,6 +9,10 @@ const Contact = () => {
       margin-top: 50px;
     }
   `;
+
+  const handleEmail = (e) => {
+    window.location.href = 'mailto:ocredle@gmail.com';
+  };
   return (
     <StyledDiv>
       <img
@@ -23,7 +27,7 @@ const Contact = () => {
         <br />
         Ba Sing Se, CA 10001
       </p>
-      <Button>Contact Us</Button>
+      <Button onClick={handleEmail}>Contact Us</Button>
     </StyledDiv>
   );
 };

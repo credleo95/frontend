@@ -57,7 +57,7 @@ export default function SignUp() {
         console.log(error, 'Sign Up failed');
       })
       .finally(() => {
-        push('/login');
+        push('/signin');
       });
   };
 
