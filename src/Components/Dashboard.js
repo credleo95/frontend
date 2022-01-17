@@ -28,14 +28,14 @@ const Dashboard = () => {
     push('/add');
   };
   return (
-    <div class="Dashboard">
+    <div className="Dashboard active-bg">
       <header>
         <h1 id="dashboardTitle">My Articles</h1>
         <Button primary onClick={handleAdd}>
           <IoMdAddCircle /> Add another article
         </Button>
       </header>
-      <section class="CardDashboard">
+      <section className="CardDashboard">
         {articles.map((article) => {
           return <ArticleCard article={article} key={article.article_id} />;
         })}

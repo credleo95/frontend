@@ -25,10 +25,9 @@ function Copyright(props) {
     >
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        PinteReach
       </Link>{' '}
       {new Date().getFullYear()}
-      {'.'}
     </Typography>
   );
 }
@@ -61,7 +60,7 @@ export default function SignInSide({ setIsLoggedIn }) {
   return (
     <ThemeProvider theme={theme}>
       <Grid container component="main" sx={{ height: '100vh' }}>
-        <CssBaseline />
+        <CssBaseline enableColorScheme />
         <Grid
           item
           xs={false}
