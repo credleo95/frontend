@@ -8,6 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Once signed in, you can reference saved articles and create new articles.
 
+## This project was built with React & styled using styled components & material UI. 
 ** If you experience any bugs, please use the Contact Us button to send me an email. 
 
 
