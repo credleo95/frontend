@@ -12,12 +12,11 @@ const Dashboard = () => {
   const articleStore = [];
   const { push } = useHistory();
   const [articles, setArticles] = useState(articleStore);
-  // 'https://reqres.in/api/users'
+
   useEffect(() => {
     axios
       .get('https://pintereachunit4.herokuapp.com/api/articles')
       .then((res) => {
-        // setArticles(res.data.data)
         setArticles(res.data);
       })
       .catch((err) => {
