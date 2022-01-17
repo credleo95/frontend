@@ -87,9 +87,9 @@ const ArticleCard = ({ article, setGlobalArticles }) => {
           Rank: {ranking[rank - 1]} {rankStatus[rank - 1]}{' '}
         </p>
         <p>Category: {category}</p>
-        <p className="READMORE" onClick={(window.location.href = { link })}>
+        <a className="READMORE" href={link}>
           Read More
-        </p>
+        </a>
         <p>Summary: {description}</p>
         <div>
           <Button className="primarybtn" primary onClick={handleModal}>

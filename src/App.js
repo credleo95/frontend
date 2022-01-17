@@ -17,20 +17,20 @@ function App() {
 
   const handleLogout = () => {
     localStorage.removeItem('token');
-    window.location.href = '/login';
+    window.location.href = '/signin';
   };
 
   return (
-    <div className="waves">
+    <div>
       <NavBar>
         <StyledLink to="/">Home</StyledLink>
         <StyledLink to="/contact">Contact</StyledLink>
 
         {isLoggedIn ? null : <StyledLink to="/signin">Sign In</StyledLink>}
 
-        {isLoggedIn ? <StyledLink to="/signup">Sign Up</StyledLink> : null}
+        {isLoggedIn ? null : <StyledLink to="/signup">Sign Up</StyledLink>}
         {isLoggedIn ? (
-          <StyledLink onClick={handleLogout}>Log Out</StyledLink>
+          <StyledLink onClick={handleLogout}>Sign Out</StyledLink>
         ) : null}
         {isLoggedIn ? (
           <StyledLink className="dashLink" to="/userdashboard">
