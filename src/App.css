@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+html {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #cde9fd;
+}
+
+.apptitle {
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 18px;
+  color: white;
+  font-family: 'Gotham';
+  font-weight: 900;
+}
+/* Landing Page Additions */
+
+button:hover {
+  background-color: deepskyblue;
+}
+.CardContainer {
+  margin-top: 0;
+  border-bottom: 1px solid black;
+}
+.CardContainer:hover {
+  background-color: #bcbcbecc;
+}
+
+#dashboardTitle {
+  text-align: middle;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+
+.dashLink {
+  color: #40826d;
+}
+
+.READMORE {
+  color: #40826d;
+}
+
+.title {
+  margin-top: 0;
+}
+.Modal {
+  z-index: 1000;
+}
+
+/* Styles for About Component */
+.aboutContainer {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.aboutImageContainer {
+  width: 50%;
+}
+
+.aboutImageContainer img {
+  width: 45vw;
+  height: auto;
+  margin-top: 8%;
+}
+
+.aboutContent {
+  width: 40%;
+  text-align: left;
+  margin-right: 150px;
+}
+
+.aboutContainer h1 {
+  font-size: 5em;
+  text-align: center;
+  background-color: #40826d;
+}
+
+/* Styles for LandingPage Component*/
+
+.landingPageImageContainer {
+  width: 60%;
+}
+
+.landingPageImageContainer img {
+  height: 52vh;
+}
+
+.landingContainer h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+.landingContainer p {
+  font-size: 1.2em;
+}
+
+.landingText {
+  width: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+@media only screen and (max-width: 768px) {
+  .landingText {
+    width: 100%;
+  }
+  .landingPageImageContainer {
+    width: 100%;
+  }
+}
+
+/*ABOUT*/
+.aboutContainer {
+  flex-flow: column nowrap;
+}
+
+.aboutImageContainer {
+  width: 90%;
+  margin-left: 7%;
+}
+
+.aboutImageContainer img {
+  height: auto;
+}
+
+.aboutContent {
+  width: 90%;
+  text-align: center;
+  margin-left: 5%;
+}
+
+.aboutContainer h1 {
+  font-size: 3em;
+  text-align: center;
+  background-color: #40826d;
+}
+
+/*CONTACT*/
+.contactImage {
+  height: 300px;
+  margin-bottom: -60px;
+  margin-top: 40px;
+}
+
+.UpdateModalContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: skyblue;
+  border: 1px solid deepskyblue;
+  border-radius: 30px;
+  z-index: 1000;
+  width: 50%;
+}
+
+.edit-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ModalContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  background-color: skyblue;
+  border: 1px solid deepskyblue;
+  border-radius: 30px;
+  width: 50%;
+  padding: 2rem;
+}
